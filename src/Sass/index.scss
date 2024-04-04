@@ -3,6 +3,26 @@
     padding:0;
     box-sizing:border-box;
 }
-.App-header{
-    background-color: darkblue;
+$dark-background:rgb(27, 27, 45);
+$dark-text:#ededed;
+$light-background:#ededed;
+$light-text:rgb(27,27,45);
+[theme-mode="light"] {
+    --background-color:#{$light-background};
+    --text-color:#{$light-text};
+}
+[theme-mode="dark"] {
+    --background-color:#{$dark-background};
+    --text-color:#{$dark-text};
+}
+body{
+    width: 100%;
+    min-height:100vh;
+}
+.App{
+    background-color:var(--background-color);
+    color:var(--text-color);
+    width: 100%;
+    min-height:100vh;
+    text-align: center;
 }

@@ -4,7 +4,26 @@
   box-sizing: border-box;
 }
 
-.App-header {
-  background-color: darkblue;
+[theme-mode="light"] {
+  --background-color:#ededed;
+  --text-color:#1b1b2d;
+}
+
+[theme-mode="dark"] {
+  --background-color:#1b1b2d;
+  --text-color:#ededed;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,24 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import ThemeToggle from './ThemeToggle';
 import './css/index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Personal Webiste With <strong>React</strong>
-        </a>
-      </header>
+       <h1>Hi Every one</h1>
+       <ThemeToggle></ThemeToggle>
     </div>
   );
 }
