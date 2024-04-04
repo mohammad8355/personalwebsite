@@ -1,0 +1,66 @@
+$light-toggle-back-color:rgb(255, 253, 131);
+$light-toggle-color:rgb(255, 187, 0);
+$dark-toggle-back-color:rgb(34, 61, 85);
+$dark-toggle-color:rgb(0, 162, 255);
+.theme-toggle{
+    width: 10em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--primary-color);
+    border-radius: .5em;
+    overflow:hidden;
+}
+.theme-toggle input[type='checkbox']{
+    position:absolute;
+   opacity: 0;
+   width:10em;
+   height:5em;
+   z-index: 10;
+}
+.theme-toggle label{
+    background-color:$light-toggle-back-color;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 1em;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width:60%;
+    height:60%;
+}
+.theme-toggle label i {
+    color: #fff;
+     font-size: 1.2em;
+     text-align: center;
+    z-index: 9;
+    transition: all .5s ease-in-out;
+}
+.theme-toggle label span{
+    background-color:$light-toggle-color;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width:50%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme-toggle input[type='checkbox']:checked ~ label {
+  background-color: $dark-toggle-back-color;
+}
+
+.theme-toggle input[type='checkbox']:checked ~ label span{
+    background-color:$dark-toggle-color;
+    transform: translateX(90%);
+}
+.theme-toggle input[type='checkbox']:checked ~ label span i{
+    transform:rotate(360deg);
+    transition: all .5s ease-in-out;
+}

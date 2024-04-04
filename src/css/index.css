@@ -1,3 +1,72 @@
+.theme-toggle {
+  width: 10em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: .5em;
+  overflow: hidden;
+}
+
+.theme-toggle input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  width: 10em;
+  height: 5em;
+  z-index: 10;
+}
+
+.theme-toggle label {
+  background-color: #fffd83;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 1em;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 60%;
+  height: 60%;
+}
+
+.theme-toggle label i {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  z-index: 9;
+  transition: all .5s ease-in-out;
+}
+
+.theme-toggle label span {
+  background-color: #ffbb00;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle input[type='checkbox']:checked ~ label {
+  background-color: #223d55;
+}
+
+.theme-toggle input[type='checkbox']:checked ~ label span {
+  background-color: #00a2ff;
+  transform: translateX(90%);
+}
+
+.theme-toggle input[type='checkbox']:checked ~ label span i {
+  transform: rotate(360deg);
+  transition: all .5s ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +76,13 @@
 [theme-mode="light"] {
   --background-color:#ededed;
   --text-color:#1b1b2d;
+  --primary-color:#dddee3;
 }
 
 [theme-mode="dark"] {
   --background-color:#1b1b2d;
   --text-color:#ededed;
+  --primary-color:#4e5eac;
 }
 
 body {
