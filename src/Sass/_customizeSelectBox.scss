@@ -1,0 +1,17 @@
+select{
+    background-color: var(--primary-color);
+    height:5em;
+    width:10em;
+    text-align: right;
+    border-radius: .5em;
+    border:none;
+    color:var(--text-color);
+    font-size: 1em;
+    font-weight: 600;
+    text-wrap:balance;
+    option {
+        background-color: var(--primary-color);
+        width:100%;
+        border:none;
+    }
+}

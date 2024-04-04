@@ -1,8 +1,11 @@
 @import "_toggletheme";
+@import "_profilecard";
+@import "_customizeSelectBox";
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
 }
 $dark-background:rgb(27, 27, 45);
 $dark-text:#ededed;
