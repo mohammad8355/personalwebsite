@@ -87,7 +87,7 @@
 .container-fluid .profilecard .profileImage {
   position: absolute;
   top: -5em;
-  border-radius: 50%;
+  border-radius: 1em;
   float: left;
   overflow: hidden;
   border: 1em solid var(--background-color);
@@ -100,25 +100,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.container-fluid .profilecard .header {
-  position: relative;
-  display: flex;
-  width: 70%;
-  align-items: center;
-  justify-content: space-between;
-  margin: .5em;
+  border-radius: 1em;
 }
 
 .container-fluid .profilecard .body {
   width: 100%;
+  min-height: 20em;
   padding: .5em;
   border-radius: .5em;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
   padding-top: 5em;
+  display: flex;
+  align-items: flex-end;
 }
 
 select {
@@ -148,15 +143,15 @@ select option {
 }
 
 [theme-mode="light"] {
-  --background-color:#ededed;
-  --text-color:#1b1b2d;
-  --primary-color:#dddee3;
+  --background-color:#C4DFDF;
+  --text-color:#070F2B;
+  --primary-color:#D2E9E9;
 }
 
 [theme-mode="dark"] {
-  --background-color:#1b1b2d;
-  --text-color:#ededed;
-  --primary-color:#4e5eac;
+  --background-color:#070F2B;
+  --text-color:#C4DFDF;
+  --primary-color:#1B1A55;
 }
 
 body {

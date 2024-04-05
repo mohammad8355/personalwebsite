@@ -22,7 +22,7 @@ const ThemeToggle = () => {
   return (
      <div className='theme-toggle' onClick={toggleTheme}>
                <input type='checkbox' />
-               <label><span><i id="toggleIcon" class="fa-solid fa-sun"></i></span></label>
+               <label><span><i id="toggleIcon" className="fa-solid fa-sun"></i></span></label>
      </div>
   );
 };

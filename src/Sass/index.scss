@@ -1,18 +1,19 @@
 @import "_toggletheme";
 @import "_profilecard";
 @import "_customizeSelectBox";
+@import "_profileInfo";
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family: "Roboto", sans-serif;
 }
-$dark-background:rgb(27, 27, 45);
-$dark-text:#ededed;
-$light-background:#ededed;
-$dark-primary:#4e5eac;
-$light-primary:#dddee3;
-$light-text:rgb(27,27,45);
+$dark-background:#070F2B;
+$dark-text:#C4DFDF;
+$light-background:#C4DFDF;
+$dark-primary:#1B1A55;
+$light-primary:#D2E9E9;
+$light-text:#070F2B;
 [theme-mode="light"] {
     --background-color:#{$light-background};
     --text-color:#{$light-text};
