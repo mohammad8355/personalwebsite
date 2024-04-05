@@ -1,0 +1,20 @@
+nav{
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            width: 2em;
+            height:2em;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        li.active{
+            background-color: $light-toggle-color;
+            border-radius: .5em;
+            box-shadow: 0 0 15px 5px $light-toggle-color;
+        }
+    }
+}

@@ -30,7 +30,7 @@
               }
         .body{
             width:100%;
-            min-height:20em;
+            min-height:25em;
             padding: .5em;
             border-radius: .5em;
             background-color: var(--primary-color);
@@ -38,7 +38,8 @@
             align-items: center;
             padding-top: 5em;
             display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
         }
     }
 }
