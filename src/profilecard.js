@@ -9,6 +9,7 @@ import ProfileContentBody from './ProfileContentBody';
 const ProfileCard = (props) => {
    let data = props.data;
    let content = props.content;
+   let onChange = props.onChange;
   return (
      <div className='container-fluid'>
         <div className='d-flex flex-row col-12 justify-content-between'>
@@ -19,7 +20,7 @@ const ProfileCard = (props) => {
         <div className='profileImage' ><img src={ProfileImage} /></div>
            <div className='body'>
                        <ProfileInfo Name={data.Name} Field={data.Field} Age={data.Age} ></ProfileInfo>   
-                       <NavMenu></NavMenu>
+                       <NavMenu onChange={onChange} ></NavMenu>
            </div>
         </div>
         <ProfileContentBody content={content} ></ProfileContentBody>
